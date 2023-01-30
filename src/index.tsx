@@ -89,6 +89,44 @@ import ReactDOM from 'react-dom/client'
 //     </React.StrictMode>
 // )
 // Та ж самостіна через стрілкову функцію
+// const Title = () => {
+//     return <h1>Hello App.js</h1>
+// }
+// const Content = () => {
+//     return (
+//         <React.Fragment>
+//             <p>
+//                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+//                 Nesciunt corporis aliquam id mollitia incidunt officia dolore.
+//                 Vel quos nisi, numquam in aliquam atque itaque ex eligendi
+//                 dolores provident, alias eum?
+//             </p>
+//             <p>
+//                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+//                 Placeat nobis quae fugit natus incidunt accusamus facere ab eos,
+//                 necessitatibus et officiis dolorem, veniam quisquam ratione,
+//                 vitae blanditiis neque accusantium mollitia!
+//             </p>
+//         </React.Fragment>
+//     )
+// }
+// function App() {
+//     return (
+//         <>
+//             <Title />
+//             <Content />
+//         </>
+//     )
+// }
+// const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+// root.render(
+//     <React.StrictMode>
+//         {' '}
+//         <App />
+//     </React.StrictMode>
+// )
+
+//реакт фрагмент
 const Title = () => {
     return <h1>Hello App.js</h1>
 }
