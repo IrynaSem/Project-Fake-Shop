@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { isPropertySignature } from 'typescript'
-import Content from './Content'
+import { Content } from './Content'
 
 interface ITitleProps {
     text: string
