@@ -9,7 +9,11 @@ function App() {
         <>
             <Title text="React" />
             <Title text="TS" />
-            <Content text1="Hello world 1" text2="Hello world 2" year={2023} />
+            <Content
+                text1="hfghfgdjfhjhghfdghdjhgf fhgjfhgjd gjgjghfh sjhdfkjgvb jhgdjhfgjdhfg"
+                text2="Tempore explicabo, consectetur quaerat unde laboriosam dolore veniam magni assumenda nemo aspernatur, natus in est ipsam facilis, error corporis et veritatis. Numquam."
+                year={2023}
+            />
         </>
     )
 }
