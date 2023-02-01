@@ -2,12 +2,12 @@ import * as React from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
-import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Container } from '@mui/material'
 import './Header.scss'
 import Logo from 'components/Logo/Logo'
+import Menu from 'components/Menu/Menu'
 type Props = {}
 const Header = (props: Props) => {
     return (
@@ -24,7 +24,7 @@ const Header = (props: Props) => {
                         <MenuIcon />
                     </IconButton>
                     <Logo />
-                    <Button color="inherit">Login</Button>
+                    <Menu />
                 </Toolbar>
             </Container>
         </AppBar>
