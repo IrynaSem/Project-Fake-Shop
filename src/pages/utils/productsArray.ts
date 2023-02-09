@@ -5,6 +5,7 @@ type Product ={
     type: string
     capacity: string
     price: number
+    image: string
 }
 
 const productsArray:Product[] =[
@@ -15,6 +16,7 @@ description:"This is iPhone 14 pro",
 type:" phone",
 capacity:"Capacity:256 ",
 price:1200,
+image:"/images/iPhone-14.jpeg",
     },
     {
         id: 2,
@@ -23,6 +25,7 @@ price:1200,
         type:" phone",
         capacity:"Capacity:128 ",
         price:900,
+        image:"/images/iPhone-13.jpeg",
             },
             {
                 id:3,
@@ -31,6 +34,7 @@ price:1200,
                 type:" phone",
                 capacity:"Capacity:64 ",
                 price:500,
+                image:"/images/iPhone-12.jpeg",
                     },
                     {
                         id:4,
@@ -39,6 +43,7 @@ price:1200,
                         type:" phone",
                         capacity:"Capacity:256 ",
                         price:600,
+                        image:"/images/iPhone-11.jpeg",
                             },
                             {
                                 id:5,
@@ -47,6 +52,7 @@ price:1200,
                                 type:" phone",
                                 capacity:"Capacity:128 ",
                                 price:300,
+                                image:"/images/iPhone-8.jpeg",
                                     },
                                     {
                                         id:6,
@@ -55,6 +61,7 @@ price:1200,
                                         type:" phone",
                                         capacity:"Capacity:64 ",
                                         price:250,
+                                        image:"/images/iPhone-7.jpeg",
                                             },
     
 ]
