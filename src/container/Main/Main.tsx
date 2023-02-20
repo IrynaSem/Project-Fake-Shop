@@ -4,15 +4,15 @@ import Home from 'pages/Home/Home'
 type Props = {
     addProductToCart: (count: number, price: number) => void
 }
-const main = (props: Props) => {
+const Main = ({ addProductToCart }: Props) => {
     return (
         <Container
             sx={{
                 padding: '60px 0',
             }}
         >
-            <Home />
+            <Home addProductToCart={addProductToCart} />
         </Container>
     )
 }
-export default main
+export default Main
