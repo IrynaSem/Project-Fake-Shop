@@ -1,10 +1,7 @@
-import CartProductList from 'components/CartProductList/CartProductList'
-import CartTotal from 'components/CartTotal/CartTotal'
 import productsArray, {
     getProductsObject,
     Product,
 } from 'pages/utils/productsArray'
-
 type Props = {
     ProductsInCart: {
         [id: number]: number
@@ -13,16 +10,22 @@ type Props = {
         [id: number]: Product
     }
 }
-const CartHeader = ({
+const CartTotal = ({
     ProductsInCart,
     productsObject = getProductsObject(productsArray),
 }: Props) => {
-    console.log(productsObject)
     return (
         <div>
-            <CartProductList ProductsInCart={ProductsInCart} />
-            <CartTotal ProductsInCart={ProductsInCart} />
+            Total:{' '}
+            {Object.keys(ProductsInCart).reduce(
+                (total, productId) =>
+                    total +
+                    productsObject[parseInt(productId)].price *
+                        ProductsInCart[parseInt(productId)],
+                0
+            )}
+            $
         </div>
     )
 }
-export default CartHeader
+export default CartTotal
